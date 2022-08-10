@@ -35,7 +35,7 @@ const crearNuevaLinea = (nombre, email) => {
   
   const table = document.querySelector("[data-table]");
 
-  listaClientes().then((data) => {
+  clientService.listaClientes().then((data) => {
     data.forEach((perfil) => {
       const nuevaLinea = crearNuevaLinea(perfil.nombre, perfil.email);
       table.appendChild(nuevaLinea);

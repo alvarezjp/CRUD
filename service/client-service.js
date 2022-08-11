@@ -11,16 +11,32 @@ const crearCliente = (nombre,email) => {
 };
 
 const eliminarCliente = (id) => {
-  console.log("eliminar a --> ",id);
   return fetch(`http://localhost:3000/perfil/${id}`,{
     method: "DELETE",
   })
 }
 
+const detalleCliente = (id) =>{
+  return fetch(`http://localhost:3000/perfil/${id}`).then((respuesta) => respuesta.json())
+}
+
+const actualizarCliente = (nombre,email,id) =>{
+  return fetch(`http://localhost:3000/perfil/${id}`,{
+    method:"PUT",
+    headers: {
+      "Content-Type": "Application/json"
+    },
+    body: JSON.stringify({nombre,email,id})
+  })
+  .then(respuesta => respuesta)
+  .catch(err => console.log(err));
+}
 export const clientService = {
   listaClientes,
   crearCliente,
   eliminarCliente,
+  detalleCliente,
+  actualizarCliente,
 }
 
 

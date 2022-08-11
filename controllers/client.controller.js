@@ -15,7 +15,7 @@ const crearNuevaLinea = (nombre, email, id) => {
         <ul class="table__button-control">
           <li>
             <a
-              href="../screens/editar_cliente.html"
+              href="../screens/editar_cliente.html?id=${id}"
               class="simple-button simple-button--edit"
               >Editar</a
             >
@@ -34,7 +34,10 @@ const crearNuevaLinea = (nombre, email, id) => {
     const btn = linea.querySelector("button");
     btn.addEventListener("click",() => {
       const id = btn.id;
-      console.log("el click",id)
+      clientService.eliminarCliente(id).then(respuesta => {
+        console.log(respuesta);
+      })
+      .catch((err) => alert("Ocurrio un problema"));
     })
     return linea;
   };

@@ -1,19 +1,14 @@
 {
   "perfil": [
     {
-      "nombre": "Harland Lohora",
-      "email": "harland@alura.com",
+      "nombre": "nada",
+      "email": "nada@alura.com",
       "id": 1
     },
     {
-      "nombre": "carlos",
-      "email": "Mymusicfran456@gmail.com",
-      "id": "ec854fb2-fd59-4df5-aa92-5243b13c00c3"
-    },
-    {
-      "nombre": "fran ",
-      "email": "fran@frn.cl",
-      "id": "19d83bcd-70f4-494d-8475-0fdb98e93a4b"
+      "nombre": "francisco",
+      "email": "jesus@algo.cl",
+      "id": "835ca84a-9802-4521-a199-9824d286c718"
     }
   ]
 }

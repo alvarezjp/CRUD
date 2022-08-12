@@ -1,13 +1,13 @@
 {
   "perfil": [
     {
-      "nombre": "nada",
-      "email": "nada@alura.com",
+      "nombre": "fran",
+      "email": "fran@alura.com",
       "id": 1
     },
     {
-      "nombre": "francisco",
-      "email": "jesus@algo.cl",
+      "nombre": "Jesus",
+      "email": "otro@algo.cl",
       "id": "835ca84a-9802-4521-a199-9824d286c718"
     }
   ]
